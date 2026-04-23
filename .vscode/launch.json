@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "[Debug] ImageIn",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+        },
+        {
+            "name": "[Release] ImageIn",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+        },
+    ]
+}
