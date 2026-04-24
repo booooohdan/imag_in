@@ -59,10 +59,10 @@ flutter_launcher_icons:
 
 # dart run flutter_native_splash:create
 flutter_native_splash:
-  color: "#7A5298"
+  color: "#009688"
   image: assets/icon_transparent.png
   android_12:
-    color: "#7A5298"
+    color: "#009688"
     image: assets/icon_transparent.png
   fullscreen: true
   android: true
