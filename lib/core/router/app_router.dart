@@ -5,7 +5,9 @@ import 'package:imag_in/core/screens/app_state_screen.dart';
 import 'package:imag_in/core/services/app_status_provider.dart';
 import 'package:imag_in/core/utils/enums/app_state.dart';
 import 'package:imag_in/features/authentication/screens/authentication_screen.dart';
-import 'package:imag_in/features/gallery/gallery_screen.dart';
+import 'package:imag_in/features/gallery/screens/gallery_screen.dart';
+import 'package:imag_in/features/photo/models/photo.dart';
+import 'package:imag_in/features/photo/screens/photo_screen.dart';
 
 final rootNavigatorKey = GlobalKey<NavigatorState>();
 
@@ -81,7 +83,7 @@ class AppRouter {
       GoRoute(
         path: '/${Routes.photo.route}',
         name: Routes.photo.route,
-        builder: (context, state) => const Placeholder(),
+        builder: (context, state) => PhotoScreen(photo: state.extra! as Photo),
       ),
     ],
   );

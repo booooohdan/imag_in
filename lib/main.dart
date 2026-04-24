@@ -6,6 +6,7 @@ import 'package:imag_in/core/router/app_router.dart';
 import 'package:imag_in/core/services/app_status_provider.dart';
 import 'package:imag_in/core/styles/app_theme.dart';
 import 'package:imag_in/features/authentication/services/auth_provider.dart';
+import 'package:imag_in/features/gallery/services/gallery_provider.dart';
 import 'package:provider/provider.dart';
 
 Future<void> main() async {
@@ -24,6 +25,7 @@ Future<void> main() async {
         MultiProvider(
           providers: [
             ChangeNotifierProvider(create: (_) => AppStatusProvider()),
+            ChangeNotifierProvider(create: (_) => GalleryProvider()),
             ChangeNotifierProxyProvider<AppStatusProvider, AuthProvider>(
               create: (_) => AuthProvider(),
               update: (_, appStatusProvider, authService) =>

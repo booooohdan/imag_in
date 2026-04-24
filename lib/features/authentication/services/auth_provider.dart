@@ -2,11 +2,11 @@ import 'dart:developer';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:imag_in/core/services/api_client.dart';
 import 'package:imag_in/core/services/app_status_provider.dart';
 import 'package:imag_in/core/utils/enums/consumer_state.dart';
 import 'package:imag_in/features/authentication/models/auth_request.dart';
 import 'package:imag_in/features/authentication/models/auth_response.dart';
+import 'package:imag_in/features/authentication/services/api_client.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthProvider extends ChangeNotifier {

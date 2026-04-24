@@ -170,16 +170,6 @@ class AppTheme {
         ),
       ),
     ),
-    //* Text Button
-    textButtonTheme: TextButtonThemeData(
-      style: ButtonStyle(
-        textStyle: WidgetStateProperty.all(
-          textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w900),
-        ),
-        foregroundColor: WidgetStateProperty.all(Colors.white),
-        minimumSize: WidgetStateProperty.all(const Size(64, 48)),
-      ),
-    ),
     //* Floating Action Button
     floatingActionButtonTheme: FloatingActionButtonThemeData(
       elevation: 0,

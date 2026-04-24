@@ -2,13 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "[Debug] ImageIn",
+            "name": "[Debug] ImagIn",
             "request": "launch",
             "type": "dart",
             "flutterMode": "debug",
         },
         {
-            "name": "[Release] ImageIn",
+            "name": "[Release] ImagIn",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release",
